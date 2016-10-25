@@ -1,0 +1,47 @@
+//Escrever um algoritmo que leia 3 valores, a, b e c, calcule e escreva a média ponderada com peso igual a 5 
+//para notas maiores que 6 e peso 2,5 para notas abaixo de 6.
+//Level 3 Question, still just C programming.
+
+int main(float a,b,c,ma,mb,mc,mp)
+{
+//Declarei as variaveis e estou pedindo o input do usuário.
+    printf("Digite o valor A:");
+    scanf("%f", &a);
+    printf("Digite o valor B:");
+    scanf("%f", &b);
+    printf("Digite o valor C:");
+    scanf("%f", &c);
+    //Aqui começa a estrutura condicional para atribuir media dependente do valor da nota
+    if(a>=6)
+    {
+      a=a*5;
+      ma=5;
+    }
+    else
+    {
+      a=a*2.5;
+      ma=2.5
+    }
+    if(b>=6)
+    {
+      b=b*5;
+      mb=5;
+    }
+    else
+    {
+      b=b*2.5;
+      mb=2.5
+    }
+    if(c>=6)
+    {
+      c=c*5;
+      mc=5;
+    }
+    else
+    {
+      c=c*2.5;
+      mc=2.5;
+    }
+    mp=(a+b+c)/(ma+mb+mc);
+    printf("A media ponderada desses números é:\n", mp);
+}
