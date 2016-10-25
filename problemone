@@ -26,9 +26,9 @@ int main(float G1,G2,G3,WA; char name[32])
    G1=G1*2;
    G2=G2*4;
    G3=G3*4;
-   //the weights are stndrd in the question so lets keep it that way
+   //the weights are standard in the question so lets keep it that way
    WA=(G1+G2+G3)/6;
-   printf("The Final Grade Of", name,"Was", WA);
+   printf("The Final Grade Of", name,"Was", WA); //i think that theres something wrong with this line
    if(WA>=7)
    {
     printf("Aproved!");
