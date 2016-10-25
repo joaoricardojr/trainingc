@@ -1,0 +1,44 @@
+//This problem was suggested from a teacher at college, lets see if i can do it here
+//First Programming Test:
+//Weighted Average: Basic average problem, here we will recive 3 grades form a student, G1,G2 and G3
+//and provide to each one a weight based on their order.
+//and consider if he or she is aprooved or not if the final grade is 7 or more.
+//Lets get to work!
+
+//include <stdio.h>
+//include <stdlib.h>
+//include <string.h>
+
+//Since we'r in C we have to include this Lib "string.h" to work with strings of chars
+
+int main(float G1,G2,G3,WA; char name[32])
+  {
+   //as usual we alredy declared the variables in the main() function
+   printf("Welcome to the grade calculator system, or as a like to call:\n GCS!\nThe first step is to input your name and then the 3 grades in the right order\nDon't messup with this!:\nName:");
+   scanf("%s", &name);
+   printf("Grade 1:")
+   scanf("%f", &G1);
+   printf("Grade 2:");
+   scanf("%f", &G2);
+   printf("Grade 3:");
+   scanf("%f", &G3);
+   //Now that we already read the variables from the users input guess is time to treat them
+   G1=G1*2;
+   G2=G2*4;
+   G3=G3*4;
+   //the weights are stndrd in the question so lets keep it that way
+   WA=(G1+G2+G3)/6;
+   printf("The Final Grade Of", name,"Was", WA);
+   if(WA>=7)
+   {
+    printf("Aproved!");
+   }else 
+   if(WA<7)&&(WA>=5)
+   {
+    printf("In Recovery!");
+   }else if(WA>0)&&(WA<5)
+   {
+    printf("Reproved!")
+   }
+   printf("Thanks for using the system, press enter to exit");
+  }
